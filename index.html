@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Body Chaos Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <h1>N-Body Gravity Sandbox</h1>
+        <div class="status-bar">
+            <span>Bodies: <span id="body-count">0</span></span>
+            <span>FPS: <span id="fps-counter">--</span></span>
+        </div>
+        
+        <div class="controls-section">
+            <label>Scenarios:</label>
+            <div class="button-group">
+                <button id="btn-fig8">Figure-8 (Stable)</button>
+                <button id="btn-pyth">Pythagorean (Chaotic)</button>
+                <button id="btn-random">Random Cloud</button>
+                <button id="btn-solar">Star System</button>
+            </div>
+        </div>
+
+        <div class="controls-section">
+            <label>Actions:</label>
+            <div class="button-group">
+                <button id="btn-clear" class="danger">Clear All</button>
+                <button id="btn-pause">Pause / Play</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <strong>Controls:</strong> Click & Drag on background to launch new bodies.
+        </div>
+    </div>
+    <canvas id="simCanvas"></canvas>
+    <script src="simulation.js"></script> 
+</body>
+</html>
