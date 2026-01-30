@@ -1,5 +1,3 @@
-# Three-Body-Simulation-RK4-Accurate
-
 # Three-Body Problem Simulator (RKF45)
 
 A browser-based three-body gravitational simulator that visualizes how simple Newtonian gravity produces complex and chaotic motion.
